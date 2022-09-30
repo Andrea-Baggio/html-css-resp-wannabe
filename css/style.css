@@ -138,8 +138,17 @@ img {
 
 
 @media screen and (max-width: 320px) {
+    .text {
+        font-size: .8em;
+        padding: 1em 0;
+    }
+
     h2 {
-        font-size: 1;
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
     }
 
     .container {
@@ -151,12 +160,19 @@ img {
     .row {
         display: flex;
         flex-direction: column;
-        /* flex: 1 1 100%; */
     }
     
     .col {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+
+    .col-left img {
+        padding-bottom: 3em;
+    }
+
+    .col-right p {
+        font-size: .8em;
     }
 
     .row .col {
@@ -167,4 +183,10 @@ img {
     .row img {
         width: 100%;
     }
+
+    .why-us {
+        background-color: rgb(34, 34, 34);
+    }
+
+    
 }
