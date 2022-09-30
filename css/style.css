@@ -132,5 +132,39 @@ img {
 @media screen and (max-width: 768px) {
     .container {
         width: calc(100% - 20px);
+        padding: 20px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    h2 {
+        font-size: 1;
+    }
+
+    .container {
+        width: calc(100% - 20px);
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        /* flex: 1 1 100%; */
+    }
+    
+    .col {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .row .col {
+        margin: auto;
+        width: 100%;
+    }
+
+    .row img {
+        width: 100%;
     }
 }
